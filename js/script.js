@@ -133,10 +133,11 @@ function getRequiredPages(list)
 {
    let result = list.length / entriesPerPage;
 
-   if (list.length % entriesPerPage !== 0)
+   if (list.length % entriesPerPage !== 0){
       //  updating results
       result = parseInt(Math.ceil(result));     
-   return result;   
+   return result;  
+   } 
 }
 
 //This helper function recieves an array of links and a target link. the function activates the target link and deactivates the rest of the links in the array.  
